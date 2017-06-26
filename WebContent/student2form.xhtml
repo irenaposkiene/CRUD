@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <title>Registration Form (3uzd.)</title>
+    </h:head>
+
+	<h:body>
+
+		<h:form>
+
+	 <h3>Lessons</h3>
+			<h:selectOneMenu value="#{student2.subject1}" style="color:red">
+			<f:selectItems value="#{student2.subject1Options}" />
+			</h:selectOneMenu>
+            <br/><br/>
+    
+           
+       <h3>Languages</h3> 
+        <h:selectManyListbox value="#{student2.subject2Lang}" style="color:green">
+        	<f:selectItem itemValue="Spanish" itemLabel="Spanish" />
+   			<f:selectItem itemValue="German" itemLabel="German" />
+   			<f:selectItem itemValue="Italian" itemLabel="Italian" />
+        </h:selectManyListbox>
+        
+	         <br/><br/>
+	
+		<h3>Gender</h3> 
+         <h:selectOneRadio value="#{student2.gender}" style="color:blue">
+            <f:selectItem itemValue="Male" itemLabel="Male" />
+            <f:selectItem itemValue="Female" itemLabel="Female" />
+         </h:selectOneRadio>			
+		    <h:commandButton value="Registry" action="student2_response" />
+
+		</h:form>
+		
+	</h:body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
